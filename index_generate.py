@@ -120,7 +120,7 @@ class HtmlBeautyFile(object):
             raise
         self.tabs.append(tab)
 
-    def generate(self, output_file_name="index_beauty.html"):
+    def generate(self, output_file_name="index.html"):
         tabs_card_code = "".join(
             [tab.generate_tabname_card_code() for tab in self.tabs])
         tabs_content_code = "".join(

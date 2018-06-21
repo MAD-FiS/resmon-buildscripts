@@ -162,7 +162,7 @@ if __name__ == '__main__':
     if sys.argv[2] == "resmon-monitor":
         row_two.append(RowTableSinglePart("swagger_index.html", "Otwórz Swagger"))
         html_file.add_tab('tab22', "Dokumentacja Swagger", row_two)
-    row_three.append(RowTableSinglePart("../guide_pl.pdf", "Otwórz Podręcznik"))
+    row_three.append(RowTableSinglePart("https://github.com/MAD-FiS/{0}/blob/master/guide_pl.pdf".format(sys.argv[2]), "Otwórz Podręcznik"))
     html_file.add_tab('tab33', "Podręcznik użytkownika", row_three)
 
     html_file.generate()
